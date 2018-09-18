@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="movie_side_margin">8dp</dimen>
+    <dimen name="movie_top_margin">8dp</dimen>
+    <dimen name="movie_top_margin_large">16dp</dimen>
+    <dimen name="loading_size">80dp</dimen>
+    <dimen name="movie_icon_size">200dp</dimen>
+    <dimen name="movie_details_padding">20dp</dimen>
+</resources>

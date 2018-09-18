@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/movie_details_loading"
+        android:layout_width="@dimen/loading_size"
+        android:layout_height="@dimen/loading_size"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/movie_details_error_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/movie_details_error_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/oops_something_went_wrong" />
+
+        <TextView
+            android:id="@+id/movie_details_error_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:text="Error during retrieving objects" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/movie_details_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/movie_details_padding"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/movie_details_icon"
+            android:layout_width="@dimen/movie_icon_size"
+            android:layout_height="@dimen/movie_icon_size"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/movie_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/movie_top_margin_large"
+            android:textAppearance="@style/TitleTextAppearance"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/movie_details_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/movie_top_margin"
+            android:gravity="center"
+            tools:text="Budget" />
+
+        <TextView
+            android:id="@+id/movie_details_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/movie_top_margin"
+            android:gravity="center"
+            tools:text="Body" />
+
+    </LinearLayout>
+
+</FrameLayout>
